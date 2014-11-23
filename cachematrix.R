@@ -20,7 +20,6 @@ makeCacheMatrix <- function(M = matrix() ) {
   }
   
   
-  
   makeCacheMatrix <- function(M = matrix()) {
     i <- NULL
     set <- function(y) {
@@ -54,11 +53,12 @@ makeCacheMatrix <- function(M = matrix() ) {
     i
   }
   
-  ## Returns a list from oerations above
+  ## Returns a list from operations above
   list(set = set, get = get,
        setInverse = setInverse,
        getInverse = getInverse)
 }
+
 
 
 ## The cacheSolve function computes the inverse of the special matrix returned by 
@@ -86,10 +86,10 @@ cacheSolve <- function(x, ...) {
   ## computes the inverse 
   M <- solve(data, ...)
   
-  ## sets the inverse to the object
+  ## sets the inverse
   x$setInverse(M)
   
-  ## return the matrix
+  ## returns the matrix
   M
 }
 
