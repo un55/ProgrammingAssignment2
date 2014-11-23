@@ -39,7 +39,7 @@ makeCacheMatrix <- function(M = matrix() ) {
     
   ## gets the matrix
   get <- function() {
-    ## Return the matrix
+    ## returns the matrix
     M
   }
   
@@ -92,6 +92,13 @@ cacheSolve <- function(x, ...) {
   ## return the matrix
   M
 }
+
+
+
+
+
+
+
 
 
 
